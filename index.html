@@ -744,7 +744,7 @@
       if (keys.attack && player.attackCooldown <= 0) {
         player.attackCooldown = 28;
         if (currentEnemy && rectsOverlap(attackRect(), currentEnemy)) {
-          const damage = currentEnemy.boss ? 24 : 28;
+          const damage = currentEnemy.boss ? 35 : 30;
           currentEnemy.life -= damage;
           currentEnemy.hurtCooldown = 10;
           messageBox.textContent = currentEnemy.boss ? '¡Golpeaste al jefe gigante!' : '¡Golpe efectivo contra el guerrero bárbaro!';
